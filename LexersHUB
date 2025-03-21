@@ -1,0 +1,17 @@
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local replicatedStorage = game:GetService("ReplicatedStorage")
+local clothAssetId = 260383597
+
+local function purchaseCloth()
+    local args = {
+        [1] = clothAssetId
+    }
+    
+    replicatedStorage:WaitForChild("ClothPurchase"):FireServer(unpack(args))
+end
+
+while true do
+    purchaseCloth()
+    wait(1) -- Adjust the wait time as needed
+end
