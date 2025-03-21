@@ -1,7 +1,7 @@
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 local replicatedStorage = game:GetService("ReplicatedStorage")
-local clothAssetId = 260383597
+local clothAssetId = 114004650
 
 local function purchaseCloth()
     local args = {
